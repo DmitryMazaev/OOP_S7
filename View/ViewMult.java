@@ -16,31 +16,31 @@ public class ViewMult implements iCalculMult{
         double mult2 = complexNumber1.getA() * complexNumber2.getB() + complexNumber1.getB() * complexNumber2.getA();
         if (mult2 < 0 && complexNumber1.getB() < 0 && complexNumber2.getB() < 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringMinus() + " равна "+ mult1 + " - i*" + (-mult2));
+            System.out.println("Произведение комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringMinus() + " равно "+ mult1 + " - i*" + (-mult2));
         }
         if (mult2 < 0 && complexNumber1.getB() > 0 && complexNumber2.getB() < 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringMinus() + " равна "+ mult1 + " - i*" + (-mult2));
+            System.out.println("Произведение комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringMinus() + " равно "+ mult1 + " - i*" + (-mult2));
         }
         if (mult2 < 0 && complexNumber1.getB() < 0 && complexNumber2.getB() > 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringPlus() + " равна "+ mult1 + " - i*" + (-mult2));
+            System.out.println("Произведение комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringPlus() + " равно "+ mult1 + " - i*" + (-mult2));
         }
         if (mult2 < 0 && complexNumber1.getB() > 0 && complexNumber2.getB() > 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringPlus() + " равна "+ mult1 + " - i*" + (-mult2));
+            System.out.println("Произведение комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringPlus() + " равно "+ mult1 + " - i*" + (-mult2));
         }
         if (mult2 > 0 && complexNumber1.getB() > 0 && complexNumber2.getB() > 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringPlus() + " равна "+ mult1 + " + i*" + mult2);
+            System.out.println("Произведение комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringPlus() + " равно "+ mult1 + " + i*" + mult2);
         }
         if (mult2 > 0 && complexNumber1.getB() < 0 && complexNumber2.getB() > 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringPlus() + " равна "+ mult1 + " + i*" + mult2);
+            System.out.println("Произведение комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringPlus() + " равно "+ mult1 + " + i*" + mult2);
         }
         if (mult2 > 0 && complexNumber1.getB() > 0 && complexNumber2.getB() < 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringMinus() + " равна "+ mult1 + " + i*" + mult2);
+            System.out.println("Произведение комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringMinus() + " равно "+ mult1 + " + i*" + mult2);
         }
        
     }

@@ -1,13 +1,10 @@
 package View;
-import java.util.ArrayList;
-import java.util.List;
 import Classes.ComplexNumber;
 import Interfaces.iCalculDiff;
 
 public class ViewDiff implements iCalculDiff{
     private ComplexNumber complexNumber1;
     private ComplexNumber complexNumber2;
-    List<ComplexNumber> comList = new ArrayList<ComplexNumber>();
     public ViewDiff(ComplexNumber complexNumber1, ComplexNumber complexNumber2) {
         this.complexNumber1 = complexNumber1;
         this.complexNumber2 = complexNumber2;
@@ -22,31 +19,31 @@ public class ViewDiff implements iCalculDiff{
         
         if (res2 < 0 && complexNumber1.getB() < 0 && complexNumber2.getB() < 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringMinus() + " равна "+ res1 + " - i*" + (-res2));
+            System.out.println("Разница комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringMinus() + " равна "+ res1 + " - i*" + (-res2));
         }
         if (res2 < 0 && complexNumber1.getB() > 0 && complexNumber2.getB() < 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringMinus() + " равна "+ res1 + " - i*" + (-res2));
+            System.out.println("Разница комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringMinus() + " равна "+ res1 + " - i*" + (-res2));
         }
         if (res2 < 0 && complexNumber1.getB() < 0 && complexNumber2.getB() > 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringPlus() + " равна "+ res1 + " - i*" + (-res2));
+            System.out.println("Разница комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringPlus() + " равна "+ res1 + " - i*" + (-res2));
         }
         if (res2 < 0 && complexNumber1.getB() > 0 && complexNumber2.getB() > 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringPlus() + " равна "+ res1 + " - i*" + (-res2));
+            System.out.println("Разница комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringPlus() + " равна "+ res1 + " - i*" + (-res2));
         }
         if (res2 > 0 && complexNumber1.getB() > 0 && complexNumber2.getB() > 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringPlus() + " равна "+ res1 + " + i*" + res2);
+            System.out.println("Разница комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringPlus() + " равна "+ res1 + " + i*" + res2);
         }
         if (res2 > 0 && complexNumber1.getB() < 0 && complexNumber2.getB() > 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringPlus() + " равна "+ res1 + " + i*" + res2);
+            System.out.println("Разница комплексных чисел " + complexNumber1.toStringMinus() + " и " + complexNumber2.toStringPlus() + " равна "+ res1 + " + i*" + res2);
         }
         if (res2 > 0 && complexNumber1.getB() > 0 && complexNumber2.getB() < 0)
         {
-            System.out.println("Сумма комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringMinus() + " равна "+ res1 + " + i*" + res2);
+            System.out.println("Разница комплексных чисел " + complexNumber1.toStringPlus() + " и " + complexNumber2.toStringMinus() + " равна "+ res1 + " + i*" + res2);
         }
     }
 }
